@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ritesh Gupta</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/52a9ee0fb0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#work">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p class="t">Computer Engineer</p>
+                <h1>Hi, I'm Ritesh Gupta</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col1">
+                    <img src="images/about.jpg" >
+                </div>
+                <div class="about-col2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>Myself Ritesh Gupta. I am currently pursuing B.Tech in Computer Engineering from Delhi Technological University.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('courses')">Courses Done</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming</span><br>C, C++, Python, Java, SQL</li>
+                            <li><span>Data Science</span><br>Pytorch, Tenserflow, Keras, Numpy</li>
+                            <li><span>Development</span><br>HTML, CSS, Javascript, PHP, Bootstrap, Django, Android Studio</li>
+                            <li><span>Softwares</span><br>MATLAB, LaTeX, Gnuplot, Git, SolidWorks, AutoCAD</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="courses">
+                        <ul>
+                            <li><span>Machine Learning</span><br>Andrew Ng</li>
+                            <li><span>Cybersecurity</span><br>Google</li>
+                            <li><span>Database Management System</span><br>DTU CO202</li>
+                            <li><span>Data Strucutres and Algorithms</span><br>DTU CO201 CO208</li>
+                            <li><span>Operating Systems</span><br>DTU CO204</li>
+                            <li><span>Discrete Structures</span><br>DTU CO205</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>B.TECH (2022-26)</span><br>Computer Engineering Delhi Technological University</li>
+                            <li><span>Class XII (2022)</span><br>CBSE St. Peter's School Chandigarh</li>
+                            <li><span>Class X (2020)</span><br>ICSE St. Stephen's School Chandigarh</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="work">
+        <div class="container">
+            <h1 class="subtitle">My Portfolio</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work1.png">
+                    <div class="layer">
+                        <h3>Codeforces</h3>
+                        <p>My profile on Codeforces specialising in Competitive Programming</p>
+                        <a href="https://codeforces.com/profile/ritesh_rg"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work2.webp">
+                    <div class="layer">
+                        <h3>Codechef</h3>
+                        <p>My profile on Codechef specialising in Interview Problems</p>
+                        <a href="https://www.codechef.com/users/ritesh_rg"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work3.jpg">
+                    <div class="layer">
+                        <h3>Github</h3>
+                        <p>My profile on Github representing my Software Projects</p>
+                        <a href="https://github.com/ritesh-rg"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div id="contact">
+    <div class="container"> 
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="subtitle">Contact me</h1>
+                <p><i class="fa fa-paper-plane"></i> riteshrg544@gmail.com</p>
+                <p><i class="fa fa-phone-square"></i> 8837876449</p>
+                <div class="social">
+                    <a href="https://www.facebook.com/profile.php?id=100005987897117"><i class="fa fa-facebook"></i></a>
+                    <a href="https://x.com/Ritesh_RG05"><i class="fa fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com/ritesh_rg?igsh=MWFiY24yamhkeXc0aw%3D%3D&utm_source=qr"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/ritesh-gupta-629b92241/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i class="fa fa-linkedin"></i></a>
+                </div>
+                <a href="images/dtu resume.pdf" download class="btn">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form id='contactForm' action="https://script.google.com/macros/s/AKfycbyiTBOnJLY0RcVboOHe_c1ndIclqyNSudsAqr4qg5g_BY4mPfPTW2q-GaVMmg4BoUYL7w/exec" method="POST">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <script>
+        
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname)
+        {
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right= "-200px"
+        }
+        // const scriptURL = '<https://script.google.com/macros/s/AKfycbyiTBOnJLY0RcVboOHe_c1ndIclqyNSudsAqr4qg5g_BY4mPfPTW2q-GaVMmg4BoUYL7w/exec>'
+        // const form = document.forms['submit-to-google-sheet']
+
+        // form.addEventListener('submit', e => {
+        //     e.preventDefault()
+        //     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        //     .then(response => console.log('Success!', response))
+        //     .catch(error => console.error('Error!', error.message))
+        // })
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault(); // Prevent the default form submission
+            console.log('Form submission prevented');
+            
+            var form = e.target;
+            var formData = new FormData(form);
+            const msg=document.getElementById("msg")
+            
+            console.log('Form data:', Array.from(formData.entries()));
+
+            fetch(form.action, {
+                method: form.method,
+                body: formData
+            }).then(response => {
+                if (response.ok) {
+                    alert('Form submitted successfully!');
+                    console.log('Form submitted successfully');
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    },5000)
+                    form.reset()
+                } else {
+                    alert('There was an issue submitting the form.');
+                    console.log('Form submission failed with response:', response);
+                }
+            }).catch(error => {
+                alert('There was an error submitting the form: ' + error.message);
+                console.log('Form submission error:', error);
+            });
+        });
+
+    </script>
+</body>
+</html>  
